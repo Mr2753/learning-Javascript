@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			/* 
+				向对象中添加属性：
+				属性名：
+					-对象的属性
+				如果要使用特殊的属性名，不能采用。的方式来操作；
+					则需: 对象['属性名'] = 属性值；
+				读取属性: 对象【‘属性名’】 = 属性值
+			使用【】这种形式操作属性。更加灵活；
+				在【】中可以直接传递一个变量；这样变量值是多少就会读取哪个属性；
+			 in运算符：
+				- 通过运算符可以检查一个对象中是否含有指定的属性；‘属性名’ in 对象；
+					如果有：True；False；
+				
+			 */
+			var obj  = new Object();
+			obj.name = 'Payne';
+			obj['123'] = 321;
+			console.log(obj['123'])
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

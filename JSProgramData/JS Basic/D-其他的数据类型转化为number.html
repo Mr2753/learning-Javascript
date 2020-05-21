@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			/* 
+			将其他的数据类型转化为Number 
+					转换方式一：使用Number()函数
+					 字符串 ---> 数字：
+					 1、纯数字的字符串，则直接转换为数字
+					 2、如有非数字的内容，则转换为Nan
+					 3、如果字符串是一个空则返回“0”
+					 4、Boolean转数字：true =1 flase = 0
+			转换方式二、
+				专门i用于字符串：
+				paseInt（）把一个字符出转换为转换为整数
+				PaseFloat() 转为浮点数
+				
+					
+			 */
+			var a = '123';
+			console.log('a的数据类型：',typeof a);
+			var b = Number(a);
+			console.log(b);
+			console.log('b的数据类型b:',typeof b);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
