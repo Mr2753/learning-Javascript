@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript">
+			/* 
+			对象的分类：
+				内建对象：
+					- 由ES标准中定义的对象，在任何的ES的实现中都可以使用
+					比如Math\String
+				宿主对象：
+					由js环境提供的对象，目前讲主要是指由浏览器提供的对象
+					- 比如BOM（consle\alert）、DOM
+				自定义对象：
+					-开发人员自己创建的
+			 
+			 */
+			// 创建对象\使用new关键字调用函数，是构造函数constructor
+			var obj = new Object();
+			// console.log(obj)
+			// 向对象中添加属性：对象。属性名=属性值； 对象['属性名']=属性值；[n]中的n可以是变量，直接在外部改变n的值，来获取对应的属性
+			
+			obj.name="孙悟空";
+			obj.age = 20;
+			obj.gender = "男";
+			obj['height'] = 170;
+			// 读取属性； 对象。属性名
+			console.log(obj);
+			// console.log(obj['height'])
+			
+			// 修改属性值(第二次添加在相同的属性名中添加，则会覆盖掉前面的值)
+			// obj.name="Tom";
+			// console.log(obj);
+			
+			// 删除对象的属性
+			// delete obj.name
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

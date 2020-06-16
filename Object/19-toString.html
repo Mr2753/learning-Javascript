@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			
+			function Person(name){
+				this.name = name;
+			}
+			Person.prototype.toString = function(){
+				return this.name
+			};
+			
+			var per = new Person('Payne');
+			// console.log(per)
+			// 当我们直接在页面中打印一个对象时，事件上时输出的对象的toString（）方法的返回值
+			// 如果我们希望在输出对象时不输出【object， object】，可以为对象添加一个toString方法
+			
+			// per.toString = function(){
+			// 	return "重新toString方法"
+			// }
+			
+			// console.log(per.toString());
+			console.log(per);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

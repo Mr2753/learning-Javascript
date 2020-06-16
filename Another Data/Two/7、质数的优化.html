@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- // 优化思路减少取值范围、 -->
+		<script type="text/javascript">
+			// 开方Math.sqrt()
+			console.time('Test')
+			for (var i = 2; i <= 10000; i++) {
+				// var flag = true;
+				// 判断i是否为质数
+				// 获取到2-i的所有数
+				for (var j = 2; j < Math.sqrt(i); j++) {
+					// 判断i是否能被j整除
+					if (i % j == 0) {
+						// flag = false;
+						break;
+					}
+					// console.log(i)
+				}
+
+			}
+			console.timeEnd('Test')
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

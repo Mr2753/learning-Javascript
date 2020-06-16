@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			function fun(){
+				alert('函数将要执行了！！！')
+				for(var i = 0; i < 5; i ++){
+					if (i == 2){
+						//结束函数执行
+						// return;
+						//跳出循环
+						// break;
+						// 跳出本次循环
+						continue;
+					}
+					console.log(i)
+				}
+				alert('函数执行完毕！！！')
+			}
+			fun();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!-- // 质数练习 // -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+	/* 
+		质数练习： 质数：在大于1的自然数中，除了1和本身，没有其他因数的自然数
+			反证法：
+			思路一：获取并运算i[2，num]之间的值，一个个除如果num能被i整除，那么它就一定不是质数
+			优化：在原基础上；剔除一个个从头到尾运算；只要能判断一个就可以确定它是质数。直接退出循环，不算后面的，即可减少在此“不必要的”运算
+	 
+	 
+	 
+	 */
+			// 判断是否合法
+			console.time('demo')
+			var num=prompt('输入检测数字');
+			if(num <= 1){
+				alert('不合法')
+			}else{
+				var falg= true;
+				// 获取2-num之间所有的值
+				for(var i=2; i <= Math.sqrt(num); i ++ ){
+					// console.log(i)
+					if(num%i == 0){
+						// 如果num能被i[2，num）整除，它就一定不是质数
+						falg = false;
+					}
+					break;
+				}
+				if(falg){
+					console.log(num+'是质数');
+				}
+				
+			}
+			console.timeEnd('demo')
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

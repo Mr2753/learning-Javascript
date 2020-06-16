@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			var score =prompt("请输入Payne的成绩：")
+			if(score>100 || score<0 ||isNaN(score)){
+				alert("输入错误");
+			}else{
+				if (score==100){
+					alert('奖励一个BWM');
+				}else if (score < 99 && score >= 80){
+					alert("iPhone15s");
+				}else if(score < 80 && score>= 60 ){
+					alert('奖励一本参考书');
+				}else if(score < 60){
+					console.log('继续努力');
+				}else{
+					alert('ok');
+				};
+			};			
+		</script>
+
+	</head>
+	<body>
+	</body>
+</html>

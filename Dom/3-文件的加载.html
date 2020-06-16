@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			/* 
+			浏览器在加载一个页面时，自上而下顺序执行的
+			*/
+		   /* 
+			onload事件会在整个页面加载完成之后才触发
+		   为window绑定一个onload事件
+		   */
+		  window.onload = function(){
+			  // 获取id属性
+			  document.getElementById("btn").onclick=function(){
+				alert('HaH')
+			  }
+		  }
+		  /* window.onload = function(){
+			  document.getElementById('btn').innerHTML = "a";
+		  } */
+		</script>
+	</head>
+	<body>
+	<button type="button" id="btn">Button</button>	
+		
+	</body>
+</html>

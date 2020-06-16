@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 可以写在外部，然后调用即可，一旦用于引用外部，就不能编写代码了 -->
+		<script type="text/javascript" src="./js/1.js">
+		</script>
+		
+	</head>
+	<body>
+		<!-- js代码编写的位置,虽然可以写在标签页中，但属于结构与行为耦合，不方便维护 -->
+		<!--1、将js代码写编写在onclick属性中，当外卖点击时，js代码才会执行  -->
+		<button onclick="alert('点击成功')">点我一下</button>
+		<!-- 2、将代码写在超链接的href属性中，这样当点击超链接时，会执行js代码 -->
+		<a href="javascript:alert('href 点击成功')">点一下</a>
+		
+	</body>
+</html>
